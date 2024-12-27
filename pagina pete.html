@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SE BUSCA ESTE FRACASADO</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Centra el contenido horizontalmente */
+            align-items: center; /* Centra el contenido verticalmente */
+            flex-direction: column; /* Organiza el contenido de arriba hacia abajo */
+            height: 100vh; /* Altura de la pantalla */
+            background-color: #f4f4f4; /* Fondo gris claro */
+            font-family: 'Arial', sans-serif; /* Fuente moderna */
+        }
+
+        h1 {
+            color: #FF6347; /* Rojo tomate */
+            font-size: 3rem; /* Tamaño grande */
+            text-align: center; /* Centra el texto */
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #333; /* Texto gris oscuro */
+            font-size: 1.2rem; /* Tamaño de texto más grande */
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        img {
+            border-radius: 10px; /* Bordes redondeados para la imagen */
+            width: 60%; /* Tamaño de la imagen */
+            max-width: 400px; /* Tamaño máximo */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para la imagen */
+            margin-bottom: 30px; /* Espacio debajo de la imagen */
+        }
+
+        button {
+            background-color: #FF6347; /* Rojo tomate */
+            color: white; /* Texto blanco */
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 5px; /* Bordes redondeados */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button:hover {
+            background-color: #FF4500; /* Rojo más oscuro cuando se pasa el cursor */
+        }
+    </style>
+</head>
+<body>
+    <h1>SE BUSCA ESTE FRACASADO</h1>
+    <img src="xd.jpg" alt="Imagen de un fracasado">
+    <p>asi como lo ves es un fracaso nacional y violin</p>
+    <button onclick="reproducirSonido()">¡Avísanos si lo ves!</button>
+
+    <!-- Archivo de audio -->
+    <audio id="sonido" src="sonido.mp3" type="audio/mp3"></audio>
+
+    <script>
+        function reproducirSonido() {
+            var sonido = document.getElementById('sonido');
+            sonido.play(); // Reproduce el sonido cuando se hace clic en el botón
+        }
+    </script>
+</body>
+</html>
